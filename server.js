@@ -28,6 +28,11 @@ app.use('/api', route);
 // Serve static files from 'uploads' directory
 app.use('/uploads', express.static(path.join(__dirname, 'src/uploads')));
 
+// Define a root route
+app.get('/', (req, res) => {
+    res.send('Server is running on port 3002');
+});
+
 // Set the port and start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
