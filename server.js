@@ -11,7 +11,7 @@ const app = express();
 
 // Enable CORS with specific origin
 app.use(cors({
-    origin: ['https://shawassociates.in', 'http://localhost:3000'], // Allow your domain and localhost
+    origin: ['https://shawassociates.in', 'http://localhost:3000','http://77.37.45.224:3001'], // Allow your domain and localhost
     credentials: true, // Enable if frontend sends cookies or credentials
 }));
 
